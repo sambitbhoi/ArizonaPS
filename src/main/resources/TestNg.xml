@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Arizona Test Automation Test Suite">
+
+	<listeners>
+		<listener class-name="com.arizona.Reports.ExtentReporter" />
+	</listeners>
+
+
+	<test name="Arizona Test Cases">
+		<classes>
+			<class name="com.arizona.test.LoginPageTest"></class>
+			<class name="com.arizona.test.HomePageTest"></class>
+			<class name="com.arizona.test.ContactsPageTest"></class>
+
+		</classes>
+	</test>
+</suite>

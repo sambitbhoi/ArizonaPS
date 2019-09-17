@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Arizona Test Automation Test Suite]">
+  <listeners>
+    <listener class-name="com.arizona.Reports.ExtentReporter"/>
+  </listeners>
+  <test thread-count="5" name="Arizona Test Cases(failed)">
+    <classes>
+      <class name="com.arizona.test.HomePageTest">
+        <methods>
+          <include name="verifyUserNameTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.arizona.test.HomePageTest -->
+      <class name="com.arizona.test.ContactsPageTest">
+        <methods>
+          <include name="selectMultipleContactsTest"/>
+          <include name="validateCreateNewContact"/>
+          <include name="tearDown"/>
+          <include name="selectSingleContactsTest"/>
+          <include name="verifyContactsPageLabel"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.arizona.test.ContactsPageTest -->
+      <class name="com.arizona.test.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.arizona.test.LoginPageTest -->
+    </classes>
+  </test> <!-- Arizona Test Cases(failed) -->
+</suite> <!-- Failed suite [Arizona Test Automation Test Suite] -->
